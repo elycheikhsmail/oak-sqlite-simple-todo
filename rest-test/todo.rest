@@ -1,0 +1,25 @@
+
+### https://oak-mysql-todo-f8310171.deno.dev/
+GET  http://localhost:8080/api/todos HTTP/1.1
+Content-Type: application/json
+
+### https://oak-mysql-todo-f8310171.deno.dev/
+POST  http://localhost:8080/api/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "text":" store data "
+}
+
+### https://oak-mysql-todo-f8310171.deno.dev/
+PUT   http://localhost:8080/api/todos/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "text":" UPDATED data kjhkjo"
+}
+
+
+### https://oak-mysql-todo-f8310171.deno.dev/
+DELETE  http://localhost:8080/api/todos/5 HTTP/1.1
+Content-Type: application/json

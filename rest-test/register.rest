@@ -1,0 +1,43 @@
+### https://oak-mysql-todo-f8310171.deno.dev/
+POST  http://localhost:8080/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"sidi23",
+    "password":"1234"
+}
+
+### https://oak-mysql-todo-f8310171.deno.dev/
+POST  http://localhost:8080/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"ely",
+    "password":"1234"
+}
+### https://oak-mysql-todo-f8310171.deno.dev/
+POST  http://localhost:8080/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"elyy",
+    "password":"1234"
+}
+ 
+### https://oak-mysql-todo-f8310171.deno.dev/
+POST  http://localhost:8080/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"sjsidi",
+    "password":"1234"
+}
+ 
+
+
+### https://oak-mysql-todo-f8310171.deno.dev/
+GET  http://localhost:8080/users/register HTTP/1.1
+Content-Type: application/json
+
+ 
+ 
