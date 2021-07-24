@@ -19,3 +19,5 @@ you will see screen like this:<br>
 
 # automatic test running in brwser
 read ./client-test/readme.md
+<hr />
+<image src="./client-test/oak-fetch-bowser-test.png">
