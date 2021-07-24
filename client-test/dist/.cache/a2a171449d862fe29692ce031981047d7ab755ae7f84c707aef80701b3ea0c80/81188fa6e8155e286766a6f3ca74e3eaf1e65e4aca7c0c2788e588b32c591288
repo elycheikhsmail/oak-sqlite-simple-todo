@@ -1,0 +1,18 @@
+/* src/test.ts */
+const mod3 = (async () => {
+    const { getAll, addItem } = await mod4;
+    const { asyncTestType } = await mod;
+    const testObjects: asyncTestType[] = [];
+    testObjects.push({
+        testName: "should give array of todos not empty test", fn: async () => {
+            const todos = await getAll();
+            return todos.length > 0;
+        }
+    }, {
+        testName: "shoul add an ietem of todos in db and return coreesponding value", fn: async () => {
+            const todos = await addItem("ely");
+            return todos["text"] == "ely";
+        }
+    });
+    return { testObjects };
+})();

@@ -1,0 +1,6 @@
+/* https://deno.land/x/test_manager@v0.8.3/mod.ts */
+const mod = (async () => {
+    const { asyncTestType, syncTestType } = await mod1;
+    const { TestManager } = await mod2;
+    return { TestManager };
+})();

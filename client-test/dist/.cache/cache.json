@@ -1,0 +1,234 @@
+{
+  "graph": {
+    "src/index.html": {
+      "Import": {
+        "input": "src/index.html",
+        "output": "dist/index.html",
+        "dependencies": {
+          "imports": {
+            "src/index.ts": {
+              "specifiers": {},
+              "defaults": [],
+              "namespaces": [],
+              "types": {},
+              "type": "Import",
+              "format": 8
+            }
+          },
+          "exports": {}
+        },
+        "format": 2
+      }
+    },
+    "src/index.ts": {
+      "Import": {
+        "input": "src/index.ts",
+        "output": "dist/deps/a2a171449d862fe29692ce031981047d7ab755ae7f84c707aef80701b3ea0c80.js",
+        "dependencies": {
+          "imports": {
+            "https://deno.land/x/test_manager@v0.8.3/mod.ts": {
+              "specifiers": {
+                "TestManager": "TestManager"
+              },
+              "namespaces": [],
+              "types": {},
+              "defaults": [],
+              "type": "Import",
+              "format": 8
+            },
+            "src/test.ts": {
+              "specifiers": {
+                "testObjects": "testObjects"
+              },
+              "namespaces": [],
+              "types": {},
+              "defaults": [],
+              "type": "Import",
+              "format": 8
+            }
+          },
+          "exports": {}
+        },
+        "format": 8
+      }
+    },
+    "https://deno.land/x/test_manager@v0.8.3/mod.ts": {
+      "Import": {
+        "input": "https://deno.land/x/test_manager@v0.8.3/mod.ts",
+        "output": "dist/deps/193665a83daf526965d3e3e1a56594b0e414364158b08c3eedea48a0e291386b.js",
+        "dependencies": {
+          "imports": {},
+          "exports": {
+            "https://deno.land/x/test_manager@v0.8.3/types.ts": {
+              "specifiers": {},
+              "defaults": [],
+              "namespaces": [],
+              "types": {
+                "asyncTestType": "asyncTestType",
+                "syncTestType": "syncTestType"
+              },
+              "type": "Export",
+              "format": 8
+            },
+            "https://deno.land/x/test_manager@v0.8.3/test-manager.ts": {
+              "specifiers": {
+                "TestManager": "TestManager"
+              },
+              "defaults": [],
+              "namespaces": [],
+              "types": {},
+              "type": "Export",
+              "format": 8
+            }
+          }
+        },
+        "format": 8
+      }
+    },
+    "src/test.ts": {
+      "Import": {
+        "input": "src/test.ts",
+        "output": "dist/deps/81188fa6e8155e286766a6f3ca74e3eaf1e65e4aca7c0c2788e588b32c591288.js",
+        "dependencies": {
+          "imports": {
+            "src/helper.ts": {
+              "specifiers": {
+                "getAll": "getAll",
+                "addItem": "addItem"
+              },
+              "namespaces": [],
+              "types": {},
+              "defaults": [],
+              "type": "Import",
+              "format": 8
+            },
+            "https://deno.land/x/test_manager@v0.8.3/mod.ts": {
+              "specifiers": {
+                "asyncTestType": "asyncTestType"
+              },
+              "namespaces": [],
+              "types": {},
+              "defaults": [],
+              "type": "Import",
+              "format": 8
+            }
+          },
+          "exports": {
+            "src/test.ts": {
+              "specifiers": {
+                "testObjects": "testObjects"
+              },
+              "defaults": [],
+              "namespaces": [],
+              "types": {},
+              "type": "Export",
+              "format": 8
+            }
+          }
+        },
+        "format": 8
+      }
+    },
+    "https://deno.land/x/test_manager@v0.8.3/types.ts": {
+      "Export": {
+        "input": "https://deno.land/x/test_manager@v0.8.3/types.ts",
+        "output": "dist/deps/a4a1c29b4bc24e7d4684ecced8a05b4279bdf9e337fea8cbe8db70cc33509d3d.js",
+        "dependencies": {
+          "imports": {},
+          "exports": {
+            "https://deno.land/x/test_manager@v0.8.3/types.ts": {
+              "specifiers": {},
+              "defaults": [],
+              "namespaces": [],
+              "types": {
+                "syncTestType": "syncTestType",
+                "asyncTestType": "asyncTestType"
+              },
+              "type": "Export",
+              "format": 8
+            }
+          }
+        },
+        "format": 8
+      },
+      "Import": {
+        "input": "https://deno.land/x/test_manager@v0.8.3/types.ts",
+        "output": "dist/deps/a4a1c29b4bc24e7d4684ecced8a05b4279bdf9e337fea8cbe8db70cc33509d3d.js",
+        "dependencies": {
+          "imports": {},
+          "exports": {
+            "https://deno.land/x/test_manager@v0.8.3/types.ts": {
+              "specifiers": {},
+              "defaults": [],
+              "namespaces": [],
+              "types": {
+                "syncTestType": "syncTestType",
+                "asyncTestType": "asyncTestType"
+              },
+              "type": "Export",
+              "format": 8
+            }
+          }
+        },
+        "format": 8
+      }
+    },
+    "https://deno.land/x/test_manager@v0.8.3/test-manager.ts": {
+      "Export": {
+        "input": "https://deno.land/x/test_manager@v0.8.3/test-manager.ts",
+        "output": "dist/deps/c2fa4c82d7c0952fc305c38840bfa8753d7624935c228d6d19e0c88f3a352c88.js",
+        "dependencies": {
+          "imports": {
+            "https://deno.land/x/test_manager@v0.8.3/types.ts": {
+              "specifiers": {
+                "asyncTestType": "asyncTestType",
+                "syncTestType": "syncTestType"
+              },
+              "namespaces": [],
+              "types": {},
+              "defaults": [],
+              "type": "Import",
+              "format": 8
+            }
+          },
+          "exports": {
+            "https://deno.land/x/test_manager@v0.8.3/test-manager.ts": {
+              "specifiers": {
+                "TestManager": "TestManager"
+              },
+              "defaults": [],
+              "namespaces": [],
+              "types": {},
+              "type": "Export",
+              "format": 8
+            }
+          }
+        },
+        "format": 8
+      }
+    },
+    "src/helper.ts": {
+      "Import": {
+        "input": "src/helper.ts",
+        "output": "dist/deps/a09b7f67f5f992f7ef9d9299f6fac774fb218572c9c2960eb2c30293067a8843.js",
+        "dependencies": {
+          "imports": {},
+          "exports": {
+            "src/helper.ts": {
+              "specifiers": {
+                "getAll": "getAll",
+                "addItem": "addItem"
+              },
+              "defaults": [],
+              "namespaces": [],
+              "types": {},
+              "type": "Export",
+              "format": 8
+            }
+          }
+        },
+        "format": 8
+      }
+    }
+  }
+}

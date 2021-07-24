@@ -1,6 +1,3 @@
 cd src
 deno run --allow-all app.ts
 
-
-# convention de nommage des apps
-# oak-<keyword>-<dbtype>-app

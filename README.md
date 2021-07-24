@@ -11,3 +11,11 @@ just clone this reposetory in you local machine and run this <br>
 cd src
 deno run --allow-all app.ts
 ```
+then open todo app in browser  <br>
+http://localhost:8080/ <br>
+you will see screen like this:<br>
+<image src="./oak-simpletodo.png"> <br>
+ then you can inteact with todo using this inteface.<br>
+
+# automatic test running in brwser
+read ./client-test/readme.md

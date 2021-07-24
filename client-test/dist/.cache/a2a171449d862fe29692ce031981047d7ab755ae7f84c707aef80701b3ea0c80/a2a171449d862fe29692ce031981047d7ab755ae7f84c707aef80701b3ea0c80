@@ -1,0 +1,10 @@
+/* src/index.ts */
+export default (async () => {
+    const { TestManager } = await mod;
+    const { testObjects } = await mod3;
+    const testManager = new TestManager();
+    testObjects.forEach(async (item) => {
+        await testManager.runAsyyncTest(item);
+    });
+    return {};
+})();

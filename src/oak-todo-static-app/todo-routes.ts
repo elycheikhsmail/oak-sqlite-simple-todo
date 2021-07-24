@@ -9,8 +9,8 @@ router.get("/", async (ctx) => {
 
  
 router.get("/:path", async (ctx) => {  
-  const path = ctx.request.url.pathname
- // const path = data.replace("/ui/","")
+  const path = ctx.request.url.pathname 
+  console.log({path})
  await send(ctx,path,{root:`${Deno.cwd()}/oak-todo-static-app/public`})
  
 });

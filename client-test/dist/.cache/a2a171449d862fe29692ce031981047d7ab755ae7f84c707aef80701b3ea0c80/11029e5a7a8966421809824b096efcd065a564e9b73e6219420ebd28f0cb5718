@@ -1,0 +1,12 @@
+/* https://deno.land/x/test_manager@v0.8.3/types.ts */
+const mod1 = (async () => {
+    interface syncTestType {
+        testName: string;
+        fn(): boolean;
+    }
+    interface asyncTestType {
+        testName: string;
+        fn(): Promise<boolean>;
+    }
+    return {};
+})();
