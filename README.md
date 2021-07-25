@@ -8,8 +8,7 @@ in this example you eill see : <br>
 # how to use 
 just clone this reposetory in you local machine and run this <br>
 ```
-cd src
-deno run --allow-all app.ts
+deno run --allow-all run.ts
 ```
 then open todo app in browser  <br>
 http://localhost:8080/ <br>

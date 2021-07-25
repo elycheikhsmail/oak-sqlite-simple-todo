@@ -1,4 +1,7 @@
-import { app} from "./create-app.ts";  
+import { Application } from "./../deps.ts";    
+const app = new Application();
+
+
 import { oakCors } from "https://deno.land/x/cors/mod.ts";
 app.use(oakCors({ origin: "*" }));
 

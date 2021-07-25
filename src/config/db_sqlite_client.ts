@@ -1,5 +1,11 @@
 import { DB } from "../deps.ts"
-const sqlitePath = "./../testsql.db"  // relative path
-const clientSqlite = new DB(sqlitePath); 
- export default clientSqlite
-   
+ 
+
+ export function getDbClient(path:string){
+    const clientSqlite = new DB( path ); 
+    return clientSqlite
+
+ }
+
+const dbFileName = Deno.env.get("dbfile")||"mydb.db"
+export{ dbFileName}

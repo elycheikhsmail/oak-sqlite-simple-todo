@@ -1,3 +1,0 @@
-cd src
-deno run --allow-all app.ts
-

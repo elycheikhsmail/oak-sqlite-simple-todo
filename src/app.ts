@@ -7,9 +7,7 @@ const argPort = parse(args).port;
 console.log({argPort})
 
 const port =argPort ? Number(argPort) : DEFAULT_PORT 
-console.log({port})
- 
+console.log({port}) 
 
-await app.listen({ port });
 
-// deno run --allow-all app.ts
+export{app,port}
