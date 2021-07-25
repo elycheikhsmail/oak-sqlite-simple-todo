@@ -1,15 +1,26 @@
 import { createTables } from "./create-tables.ts";
-import{ getDbClient, dbFileName} from "../config/db_sqlite_client.ts";
-
-export function createAllTables(appsArray: string[]) {
+import{ getDbClient } from "../config/db_sqlite_client.ts";
+ 
+export function createAllTables(appsArray: string[],dbFileName:string):boolean{
   console.log({appsArray})
-  appsArray.forEach(
-    async (appName) => { 
-      const path = `./${appName}/config/create-tables.sql`; 
-      const dbClient = getDbClient(dbFileName)
-      await createTables(dbClient, path);
-      console.log(`tables for ${appName} are created`)
-    },
-  );
-  console.log("tables was created")
+  const dbClient = getDbClient(dbFileName)
+  try {
+    appsArray.forEach(
+      (appName) => { 
+        const path = `./${appName}/config/create-tables.sql`; 
+        
+        createTables(dbClient, path);
+        console.log(`tables for ${appName} are created`)
+       
+      },
+    );
+    console.log("tables was created")
+    //dbClient.close()
+    return true
+    
+  } catch (error) {
+    console.log({error})
+    return false
+  }
+
 }

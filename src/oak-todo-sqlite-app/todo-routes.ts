@@ -8,6 +8,15 @@ const router = new Router();
 //   ctx.response.body = { msg: "Hello world!" };
 // });
 
+router.delete("/dd", async (ctx) => { 
+  console.log("delete all")
+   
+    // assgn book id to the params
+    const n = await  _todoService.deleteAll(ctx.state.dbClient); 
+    console.log({n})
+    ctx.response.body = { n }
+});
+
 router.get("/", async (ctx) => {
   const getAll = _todoService.getAll(ctx.state.dbClient);
   await getAll
@@ -100,6 +109,8 @@ router.delete("/:id", async (ctx) => {
       );
   }
 });
+
+
 
 // router.get('/port',(ctx) => {ctx.response.body = {PORT:Deno.env.get("PORT")||"no port in env var"} }
 // )

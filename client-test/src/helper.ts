@@ -1,7 +1,4 @@
-const todoUrl = "http://localhost:8080"
- //http://localhost:8080/api/todos
-// get list todo from the rest api
-// Access-Control-Allow-Origin
+const todoUrl = "http://localhost:8080" 
 export async function getAll(){
     const response = await fetch(todoUrl+"/api/todos",{
         headers: {

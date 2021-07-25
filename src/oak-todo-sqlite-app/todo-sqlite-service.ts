@@ -34,6 +34,20 @@ class TodoService {
     }
   }
 
+
+  async deleteAll(dbClient:DbClient):Promise<number> {
+    const sql = todoSql.deleteAll()
+    try {
+      const deleted = await dbClient.query(sql);
+      console.log("deleted : ", deleted);
+      return dbClient.changes;
+    } catch (error) {
+      console.log({ error });
+      return -1
+    }
+  }
+
+
   async update(dbClient:DbClient, _id: string, text: string) {
     const sql = todoSql.update();
 

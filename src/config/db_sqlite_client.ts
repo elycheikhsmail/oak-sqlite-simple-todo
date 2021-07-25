@@ -8,8 +8,8 @@ import { DB } from "../deps.ts"
  }
 
 let dbFileName =  "mydb.db"
-const v = Deno.env.get("dbfile")   
-if( v != undefined){
-   dbFileName = v
-} 
+
+const n = Deno.env.get("OAK_SQLITE_FILE")
+if(n) dbFileName = n 
+ 
 export{ dbFileName }

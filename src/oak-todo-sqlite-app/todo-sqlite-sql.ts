@@ -27,6 +27,15 @@ class TodoSql {
     sql += " id = ? ";
     return sql;
   }
+  deleteAll(){
+
+    let sql = "DELETE FROM ";
+    sql += this.tn;
+    sql += " WHERE ";
+    sql += " 1 > 0 ";
+    return sql
+
+  }
 
   update() {
     let sql = "UPDATE ";
