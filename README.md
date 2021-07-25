@@ -1,11 +1,20 @@
 # oak-sqlite-simple-todo
-in this example you eill see : <br>
+in this example you will see : <br>
 - how serve static site in given directory using oak <br>
 - how config db connexion (sqlite as example) in scalable way <br>
 - retrive data from posted data <br>
 - respond to user request with json data <br>
 - and more
+# requirement
+deno cli installed
+# init db
+you need to create table by running
+```
+deno run --allow-all cli.ts
+```
 # how to use 
+init db (only one time) <br>
+
 just clone this reposetory in you local machine and run this <br>
 ```
 deno run --allow-all run.ts
@@ -20,5 +29,9 @@ you will see screen like this:<br>
 read ./client-test/readme.md
 <hr />
 <image src="./client-test/oak-fetch-bowser-test.png">
+
+# inspiration 
+this project try to port best pratic and philosophie in django/flask/foalts framework to oak in progress 
+
 # limittion
 sqlite can't be out side src directory

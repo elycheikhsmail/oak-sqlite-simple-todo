@@ -7,5 +7,9 @@ import { DB } from "../deps.ts"
 
  }
 
-const dbFileName = Deno.env.get("dbfile")||"mydb.db"
-export{ dbFileName}
+let dbFileName =  "mydb.db"
+const v = Deno.env.get("dbfile")   
+if( v != undefined){
+   dbFileName = v
+} 
+export{ dbFileName }
