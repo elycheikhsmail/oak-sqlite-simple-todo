@@ -13,10 +13,12 @@ deno run --allow-all run.ts
 then open todo app in browser  <br>
 http://localhost:8080/ <br>
 you will see screen like this:<br>
-<image src="./oak-simpletodo.png"> <br>
+<image src="./src/oak-simpletodo.png"> <br>
  then you can inteact with todo using this inteface.<br>
 
 # automatic test running in brwser
 read ./client-test/readme.md
 <hr />
 <image src="./client-test/oak-fetch-bowser-test.png">
+# limittion
+sqlite can't be out side src directory
